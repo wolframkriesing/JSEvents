@@ -13,17 +13,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
-    },
-
-    captureTextClick: {
-        value: function (event) {
-        }
-    },
-
-    handleTextClick: {
-        value: function (event) {
-            this.value = "NADA";
-        }
     }
 
 });
