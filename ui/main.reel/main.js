@@ -13,6 +13,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+
+    handleTextAction: {
+        value: function (event) {
+            console.log("NOOOO");
+        }
     }
 
 });
