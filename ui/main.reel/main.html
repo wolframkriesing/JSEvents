@@ -19,7 +19,14 @@
                 "element": {"#": "button"},
                 "enabled": true,
                 "label": "Button"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "text": {
             "prototype": "montage/ui/text.reel",
