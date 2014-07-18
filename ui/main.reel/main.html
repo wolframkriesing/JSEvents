@@ -25,9 +25,16 @@
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "text"},
-                "value": "!!!!!!",
-                "enabled": true
-            }
+                "enabled": true,
+                "value": "!!!!!!"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         }
     }
     </script>
