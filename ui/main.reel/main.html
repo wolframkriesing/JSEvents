@@ -13,48 +13,20 @@
                 "element": {"#": "main"}
             }
         },
-        "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener",
-            "properties": {
-                "action": "addContent",
-                "handler": {"@": "rangeController"}
-            },
-            "_dev": {
-                "isHidden": true
-            }
-        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
                 "enabled": true,
-                "label": "New Task"
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "listener": {"@": "actionEventListener"}
-                }
-            ]
-        },
-        "list": {
-            "prototype": "digit/ui/list.reel",
-            "properties": {
-                "element": {"#": "list"},
-                "contentController": {"@": "rangeController"}
+                "label": "Button"
             }
         },
-        "rangeController": {
-            "prototype": "montage/core/range-controller",
+        "text": {
+            "prototype": "montage/ui/text.reel",
             "properties": {
-                "clearSelectionOnOrderChange": true
-            }
-        },
-        "title": {
-            "prototype": "digit/ui/title.reel",
-            "properties": {
-                "element": {"#": "title"},
-                "value": "To dos"
+                "element": {"#": "text"},
+                "value": "!!!!!!",
+                "enabled": true
             }
         }
     }
@@ -62,11 +34,8 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
+        <p data-montage-id="text"></p>
         <button data-montage-id="button"></button>
-        <ul data-montage-id="list">
-            <li></li>
-        </ul>
     </div>
 </body>
 </html>
