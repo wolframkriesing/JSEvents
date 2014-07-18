@@ -19,6 +19,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (event) {
             console.log("NOOOO");
         }
+    },
+
+    handleTextClick: {
+        value: function (event) {
+            console.log("Click!!!");
+        }
     }
 
 });
